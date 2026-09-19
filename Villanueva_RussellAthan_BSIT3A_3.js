@@ -68,4 +68,6 @@ const uppercaseInventoryItems = inventoryItem.map(item => item.toUpperCase());
  const affordablePrices = storePrices.filter(price => price <= 30);
  const longItemsNames = inventoryItem.filter(item => item.length > 5);
 
+ const externalUserData = {user: {profile: {role : "Administrator", title: "Grandmaster"}}};
+ const guildData = {guildInfo: {leader: {name: "Athan", level: 99}}};
  

@@ -50,3 +50,14 @@ const [itemOne, itemTwo, ...remainingItems] = inventoryItem;
 const {strenth} = playerStat;
 const {agility, intelligence} = playerStat;
 const {strength: playerStrength, stamina: playerStamina} = playerStat;
+
+const advancedPlayerStats = {
+  ...playerStat,
+  luck: 5,
+  charisma: 8
+};
+const completeCharacterProfile = {
+  ...advancedPlayerStats,
+  name: playerName,
+  level: playerLevel
+};

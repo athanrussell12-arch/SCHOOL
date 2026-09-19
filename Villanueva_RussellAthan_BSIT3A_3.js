@@ -29,3 +29,16 @@ const calculateDamage = (base, multiplier) => base * multiplier;
 const formatStatus = (name, lvl) => `Hero ${name} is level ${lvl}`;
 const applyBuff = (hp, boost) => hp + boost;
 const checkInventory = (items) => items.length;
+const calculateTotalGold = (gold, reward) => gold + reward;
+
+console.log(`--- Game Overview ---`);
+console.log(`1. Game Title: ${gameTitle}`);
+console.log(`2. Server Region: ${serverRegion}`);
+console.log(`3. Player Name: ${playerName}`);
+console.log(`4. Player Level: ${playerLevel}`);
+console.log(`5. Health Status: ${playerHealth} / ${maxHealth}`);
+console.log(`6. Gold Balance: ${playerGold} coins`);
+console.log(`7. Experience Points: ${currentEXP}`);
+console.log(`8. Current Quest State: ${questStatus}`);
+console.log(`9. Guild Affiliation: ${guildName}`);
+console.log(`10. Weapon Durability: ${weaponDurability}%`);

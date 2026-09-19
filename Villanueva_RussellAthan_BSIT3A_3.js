@@ -28,3 +28,4 @@ const serverRegion = "Indo-Pacific";
 const calculateDamage = (base, multiplier) => base * multiplier;
 const formatStatus = (name, lvl) => `Hero ${name} is level ${lvl}`;
 const applyBuff = (hp, boost) => hp + boost;
+const checkInventory = (items) => items.length;

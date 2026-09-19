@@ -65,9 +65,19 @@ const completeCharacterProfile = {
 const discountedStorePrices = storePrices.map(price => price * 0.9);
 const uppercaseInventoryItems = inventoryItem.map(item => item.toUpperCase());
 
- const affordablePrices = storePrices.filter(price => price <= 30);
- const longItemsNames = inventoryItem.filter(item => item.length > 5);
+const affordablePrices = storePrices.filter(price => price <= 30);
+const longItemsNames = inventoryItem.filter(item => item.length > 5);
 
- const externalUserData = {user: {profile: {role : "Administrator", title: "Grandmaster"}}};
- const guildData = {guildInfo: {leader: {name: "Athan", level: 99}}};
- 
+const externalUserData = {user: {profile: {role : "Administrator", title: "Grandmaster"}}};
+const guildData = {guildInfo: {leader: {name: "Athan", level: 99}}};
+
+const objectWithOptionalOne = {
+  userRole: externalUserData?.user?.profile?.role,
+  userTitle: externalUserData?.user?.profile?.title
+};
+
+const objectWithOptionalTwo = {
+  leaderName: guildData?.guildInfo?.leader?.name,
+  leaderLevel: guildData?.guildInfo?.leader?.level
+};
+

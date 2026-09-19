@@ -61,3 +61,6 @@ const completeCharacterProfile = {
   name: playerName,
   level: playerLevel
 };
+
+const discountedStorePrices = storePrices.map(price => price * 0.9);
+const uppercaseInventoryItems = inventoryItem.map(item => item.toUpperCase());

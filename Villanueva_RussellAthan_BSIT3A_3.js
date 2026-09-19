@@ -64,3 +64,8 @@ const completeCharacterProfile = {
 
 const discountedStorePrices = storePrices.map(price => price * 0.9);
 const uppercaseInventoryItems = inventoryItem.map(item => item.toUpperCase());
+
+ const affordablePrices = storePrices.filter(price => price <= 30);
+ const longItemsNames = inventoryItem.filter(item => item.length > 5);
+
+ 

@@ -82,7 +82,7 @@ const objectWithOptionalTwo = {
 };
 
 console.log("\n --- Optional Chaining Results ---");
-console.log("Discounted Prices: ", discountedPrices);
+console.log("Discounted Prices: ", discountedStorePrices);
 console.log("Affordable Prices: ", affordablePrices);
 console.log("Optional Chaining Object 1: ", objectWithOptionalOne);
 console.log("Optional Chaining Object 2: ", objectWithOptionalTwo);

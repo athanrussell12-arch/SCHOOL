@@ -42,3 +42,11 @@ console.log(`7. Experience Points: ${currentEXP}`);
 console.log(`8. Current Quest State: ${questStatus}`);
 console.log(`9. Guild Affiliation: ${guildName}`);
 console.log(`10. Weapon Durability: ${weaponDurability}%`);
+
+const [primaryWeapon, secondaryWeapon] = inventoryItem;
+const [firstEnemy, secondEnemy] = enemyList;
+const [itemOne, itemTwo, ...remainingItems] = inventoryItem;
+
+const {strenth} = playerStat;
+const {agility, intelligence} = playerStat;
+const {strength: playerStrength, stamina: playerStamina} = playerStat;
